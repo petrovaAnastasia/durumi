@@ -1,0 +1,89 @@
+.header {
+	flex: 0 0 auto;
+	padding: 60px 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+
+	&-left{
+		& > *:not(:last-child){
+			margin-right: 65px;
+		}
+	}
+
+	.container{
+		padding:0 60px;
+	}
+	
+}
+
+.logo{
+	margin-top: -10px;
+}
+
+.lang{
+	&__link{
+		font-weight: 500;
+		font-size: 15px;
+		line-height: 18px;
+		opacity: 0.4;
+		text-decoration: none;
+		text-transform: uppercase;
+		color: #000;
+
+		&.active{
+			opacity: 1;
+		}
+	}
+
+	& > *:not(:last-child){
+		margin-right: 15px;
+	}
+}
+
+.header-phone{
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 23px;
+	color: inherit;
+	text-decoration:none;
+}
+
+.callback-btn{
+	height: 51px;
+	line-height:51px;
+	font-weight: bold;
+	font-size: 18px;
+	text-transform:uppercase;
+	margin-left: 15px;
+	background: $btn-color1;
+	padding:0 20px;
+	border-radius:0 20px 0 20px;
+}
+
+.social{
+	position:fixed;
+	left:60px;
+	top: 190px;
+	width: 43px;
+	text-align: center;
+
+	&__link{
+		display: block;
+		svg{
+			width:100%;
+		}
+		&.facebook{
+			height:34px;
+			svg{
+				height: 100%;
+			}
+		}
+		&.instagram{
+			svg{
+				width: 34px;
+			}
+		}
+	}
+}

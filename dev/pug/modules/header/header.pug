@@ -1,0 +1,23 @@
+header.header
+	.container.box-row.align-center.space-between
+		.header-left.box-row.align-center
+			include ../navigation/main-nav
+			a(href="").logo
+				img(src="static/images/general/logo.svg").logo__img
+			ul.lang.box-row.align-center
+				li.lang__item
+					a(href="").lang__link.active RU
+				li.lang__item
+					a(href="").lang__link UA
+				li.lang__item
+					a(href="").lang__link EN
+
+		.header-right.box-row.space-end.align-center
+			a(href="tel:+380676650000").header-phone.header-right__header-phone +38 (067) 665-0000
+			.callback-btn.header-right__callback-btn СТАТЬ ПАРТНЕРОМ
+	.social.header__social
+		a(href="").social__link.facebook
+			+icon("fb")
+		a(href="").social__link.instagram
+			+icon("insta")
+		
